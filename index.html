@@ -43,9 +43,25 @@
       }
       footer {
         margin-top: 1rem;
-        text-align: center;
-        font-size: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 0.8rem;
         color: #666;
+      }
+      .left-side {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .center {
+        margin: 0 8px;
+      }
+      .right-side {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
       }
       a {
         color: #666;
@@ -73,7 +89,6 @@
   </head>
   <body>
     <h1 class="playright-in">it's ours</h1>
-
     <pre>
 IT'S OURS LICENSE, VERSION 1.0
 Copyright (c) 2025 Bhargav Kantheti
@@ -123,8 +138,11 @@ Issued on January 23, 2025
                 </pre
     >
     <footer>
-      &copy; 2025 Bhargav Kantheti |
-      <a href="https://www.its-ours.org/">its-ours.org</a>
+      <div class="left-side">&copy; 2025 |</div>
+      <div class="center">
+        <a href="https://www.its-ours.org/">its-ours.org</a> |
+      </div>
+      <div class="right-side"><a href="/api/license.txt">license.txt</a></div>
     </footer>
   </body>
 </html>
